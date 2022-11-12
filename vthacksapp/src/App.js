@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import ImageUpload from './components/ImageUpload';
 import {ImageUpload} from './pages/ImageUpload';
 import NavbarBootstrap from './components/NavbarBS';
+import Map from './pages/Map.js';
 
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
       <NavbarBootstrap/>
       <Routes>
         <Route path="/" element ={<ImageUpload/>}/>
+        <Route path="/main" element ={<Map/>}/>
       </Routes>
+
     </Router>
     </>
   );

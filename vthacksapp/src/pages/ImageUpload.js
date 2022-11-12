@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './ImageUpload.css';
 
-function ImageUpload(){
+export const ImageUpload = () =>{
     const [data,setData]=useState();
     console.log(data)
     let img = ""
@@ -22,4 +22,3 @@ function ImageUpload(){
         </div>
     );
 }
-export default ImageUpload;

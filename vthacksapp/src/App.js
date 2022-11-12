@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {ImageUpload} from './pages/ImageUpload';
 import {Map} from './pages/Map';
 import NavbarBootstrap from './components/NavbarBS';
+import Map from './pages/Map.js';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element ={<ImageUpload/>}/>
         <Route path="/map" element ={<Map/>}/>
       </Routes>
+
     </Router>
     </>
   );

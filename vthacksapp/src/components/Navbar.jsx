@@ -15,6 +15,10 @@ const Navbar = () => {
                 className='nav-links'>
                 Image Upload
               </NavLink>
+              <NavLink to='/test'
+                className='nav-links'>
+                Test
+              </NavLink>
       </ul>
     </div>
     

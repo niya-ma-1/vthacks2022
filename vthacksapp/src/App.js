@@ -11,6 +11,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<ImageUpload />} />
+        <Route path="/test" element={<test />} />
       </Routes>
     </Router>
     </>

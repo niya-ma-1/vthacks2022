@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {ImageUpload} from './pages/ImageUpload';
-import {Map} from './pages/Map';
+import Map from './pages/Map';
 import NavbarBootstrap from './components/NavbarBS';
 
 

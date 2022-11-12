@@ -1,0 +1,21 @@
+import React, {Component} from "react";
+import {GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
+import "./Map.css"
+
+export function Home(){
+    const {isLoaded} = useLoadScript({
+        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    })
+
+    if(!isLoaded):
+    
+    return <Map/>
+}
+
+function Map(){
+    return <GoogleMap 
+        zoom={10} 
+        center={{lat:100,lng:-50}} 
+        mapContainerClassName="map-container">
+    </GoogleMap>
+}

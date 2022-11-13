@@ -12,6 +12,7 @@ import {Hygrocybe_icon} from '../mushrooms/Hygrocybe';
 import {Lactarius_icon} from '../mushrooms/Lactarius';
 import {Russula_icon} from '../mushrooms/Russula';
 import {Suillis_icon} from '../mushrooms/Suillis';
+import {HeatCircle} from '../components/HeatCircle';
 
 const google = window.google;
 
@@ -263,6 +264,10 @@ return (
         lat={36}
         lng={-81}
         text="North Carolina"
+      />
+      <HeatCircle
+        lat={24}
+        lng={-160}
       />
     </GoogleMapReact>
   </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import './Sustainability.css';
 import bgImage from '../assets/burger.mp4'
+import AnimCursor from '../components/AnimatedCursor'
 
 
 export default function Sustainability(){
@@ -29,9 +30,9 @@ export default function Sustainability(){
                     <li>Grilled Stuffed Mushrooms</li>
                     <li>Cream of Mushroom Soup</li>
                 </ul>
-                
-
             </div>
+            <AnimCursor>
+            </AnimCursor>  
         </div>
     );
 }

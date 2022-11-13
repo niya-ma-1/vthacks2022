@@ -2,6 +2,7 @@ import React from "react";
 import './Sustainability.css';
 import bgImage from '../assets/diy.mp4'
 import './Diy.css';
+import AnimCursor from '../components/AnimatedCursor'
 
 
 export default function Diy(){
@@ -37,6 +38,8 @@ export default function Diy(){
                 </ul>
 
             </div>
+            <AnimCursor>
+            </AnimCursor>
         </div>
     );
 }

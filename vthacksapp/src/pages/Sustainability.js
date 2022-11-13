@@ -1,7 +1,7 @@
 import React from "react";
 import './Sustainability.css';
 import bgImage from '../assets/video1.mp4'
-
+import AnimCursor from '../components/AnimatedCursor'
 
 export default function Sustainability(){
     return(
@@ -30,6 +30,8 @@ export default function Sustainability(){
 
                 </p>
             </div>
+            <AnimCursor>
+            </AnimCursor>
         </div>
     );
 }

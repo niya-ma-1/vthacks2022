@@ -1,6 +1,7 @@
 import React from "react";
 import './Sustainability.css';
 import bgImage from '../assets/planting.mp4'
+import AnimCursor from '../components/AnimatedCursor'
 
 
 export default function Plant(){
@@ -30,6 +31,8 @@ export default function Plant(){
 
                 </p>
             </div>
+            <AnimCursor>
+            </AnimCursor>       
         </div>
     );
 }

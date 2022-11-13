@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './ImageUpload.css';
 import bgImage from '../assets/home.mp4'
+import AnimCursor from '../components/AnimatedCursor'
 
 let img = ""
 let name = ""
@@ -39,6 +40,8 @@ export const ImageUpload = () =>{
                 <img style={{height: "400px",width:"400px"}} src={file} />
             </div>
             <div>You have uploaded: {name} </div>
+            <AnimCursor>
+            </AnimCursor>
         </div>
     );
 }

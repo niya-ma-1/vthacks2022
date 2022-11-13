@@ -16,6 +16,15 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import { HeatCircle} from '../components/HeatCircle';
 import carbonEmission from '../assets/carbonEmission';
+import agaricus_logo from '../assets/mushroom_icons/agaricus_pic.png';
+import amanita_logo from '../assets/mushroom_icons/amanita_pic.png';
+import boletus_logo from '../assets/mushroom_icons/boletus_pic.png';
+import cortinarius_logo from '../assets/mushroom_icons/cortinarius_pic.png';
+import entoloma_logo from '../assets/mushroom_icons/entoloma_pic.png';
+import hygrocybe_logo from '../assets/mushroom_icons/hygrocybe_pic.png';
+import lactarius_logo from '../assets/mushroom_icons/lactarius_pic.png';
+import russula_logo from '../assets/mushroom_icons/russula_pic.png';
+import suillis_logo from '../assets/mushroom_icons/suillis_pic.png';
 
 
 const google = window.google;
@@ -67,7 +76,8 @@ return (
         checked={check1}
         onClick={() => setCheck1(!check1)}
         >
-        Agaricus {check1.toString()}
+        Agaricus 
+        <img src={agaricus_logo} style={{width:20, marginTop: -7}} />
         </ToggleButton>
     <ToggleButton
         className="mb-2"
@@ -78,7 +88,8 @@ return (
         checked={check2}
         onClick={() => setCheck2(!check2)}
         >
-        Amanita {check2.toString()}
+        Amanita 
+        <img src={amanita_logo} style={{width:20, marginTop: -7}} />
     </ToggleButton>
     <ToggleButton
         className="mb-2"
@@ -89,7 +100,8 @@ return (
         checked={check3}
         onClick={() => setCheck3(!check3)}
         >
-        Boletus {check3.toString()}
+        Boletus 
+        <img src={boletus_logo} style={{width:20, marginTop: -7}} />
     </ToggleButton>
     <ToggleButton
         className="mb-2"
@@ -100,7 +112,8 @@ return (
         checked={check4}
         onClick={() => setCheck4(!check4)}
         >
-        Cortinarius {check4.toString()}
+        Cortinarius 
+        <img src={cortinarius_logo} style={{width:20, marginTop: -7}} />
     </ToggleButton>
     <ToggleButton
         className="mb-2"
@@ -111,7 +124,8 @@ return (
         checked={check5}
         onClick={() => setCheck5(!check5)}
         >
-        Entoloma {check5.toString()}
+        Entoloma 
+        <img src={entoloma_logo} style={{width:20, marginTop: -7}} />
     </ToggleButton>
     <ToggleButton
         className="mb-2"
@@ -122,7 +136,8 @@ return (
         checked={check6}
         onClick={() => setCheck6(!check6)}
         >
-        Hygrocybe {check6.toString()}
+        Hygrocybe 
+        <img src={hygrocybe_logo} style={{width:20, marginTop: -7}} />
     </ToggleButton>
     <ToggleButton
         className="mb-2"
@@ -133,7 +148,8 @@ return (
         checked={check7}
         onClick={() => setCheck7(!check7)}
         >
-        Lactarius {check7.toString()}
+        Lactarius 
+        <img src={lactarius_logo} style={{width:20, marginTop: -7}} />
     </ToggleButton>
     <ToggleButton
         className="mb-2"
@@ -144,7 +160,8 @@ return (
         checked={check8}
         onClick={() => setCheck8(!check8)}
         >
-        Russula {check8.toString()}
+        Russula
+        <img src={russula_logo} style={{width:20, marginTop: -7}} />
     </ToggleButton>
     <ToggleButton
         className="mb-2"
@@ -155,12 +172,13 @@ return (
         checked={check9}
         onClick={() => setCheck9(!check9)}
         >
-        Suillis {check9.toString()}
+        Suillis 
+        <img src={suillis_logo} style={{width:20, marginTop: -7}} />
     </ToggleButton>
 
 
     <GoogleMapReact
-      bootstrapURLKeys={{ key: "AIzaSyCHhSC-JoW54M-PKDBVHe4wWYzdmduMLt4"
+      bootstrapURLKeys={{ key: ""
       }}
       center={defaultProps.center}
       zoom={defaultProps.zoom}

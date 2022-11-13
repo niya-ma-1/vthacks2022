@@ -1,6 +1,6 @@
 import React from "react";
 import './Sustainability.css';
-import bgImage from '../assets/burger.mp4'
+import bgImage from '../assets/diy.mp4'
 
 
 export default function Diy(){

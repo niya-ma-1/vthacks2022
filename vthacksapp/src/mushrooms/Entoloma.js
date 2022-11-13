@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Entoloma from '../assets/mushroom_icons/entoloma_pic.png'
 
-export const Entoloma = () =>{
+export const Entoloma_icon = () =>{
     
     return(
         <div className="main">

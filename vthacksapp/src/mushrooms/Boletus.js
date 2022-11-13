@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Boletus from '../assets/mushroom_icons/boletus_pic.png'
 
-export const Boletus = () =>{
+export const Boletus_icon = () =>{
     
     return(
         <div className="main">

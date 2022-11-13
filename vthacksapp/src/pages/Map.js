@@ -15,6 +15,7 @@ import {Suillis_icon} from '../mushrooms/Suillis';
 import {HeatCircle} from '../components/HeatCircle';
 
 const google = window.google;
+const conditional = true;
 
 export default function Map() {
     const defaultProps = {
@@ -28,7 +29,18 @@ export default function Map() {
     const handleApiLoaded = (map, maps) => {
       // use map and maps objects
     };
-    
+  
+/*function test(param){
+  if(param){
+    return (<div><Hygrocybe_icon
+    lat={62}
+    lng={105}
+    text="Random"
+    />
+    </div>)
+}
+}*/
+
 return (
   // Important! Always set the container height explicitly
   <div style={{ height: '100vh', width: '100%' }}>
@@ -176,7 +188,7 @@ return (
         text="North Carolina"
       />
       <Hygrocybe_icon
-        lat={22.89}
+        lat={22.29}
         lng={-155.58}
         text="Hawaii"
       />

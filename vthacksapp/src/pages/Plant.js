@@ -11,7 +11,7 @@ export default function Plant(){
             </video>
             <div className='text-wrapper'>
                 <h3>
-                    How to grow your own mushroom?
+                    How to grow your own mushrooms?
                 </h3>
 
                 <p>

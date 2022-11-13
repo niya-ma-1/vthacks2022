@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './ImageUpload.css';
+import bgImage from '../assets/home.mp4'
 
 export const ImageUpload = () =>{
     const [data,setData]=useState();
@@ -12,6 +13,9 @@ export const ImageUpload = () =>{
     
     return(
         <div className="main">
+            <video autoPlay loop muted>
+                <source src={bgImage} type ="video/mp4" />
+            </video>
             <div>
                 <div className="uploadimage">
                     <label htmlFor="imgs">Upload</label>

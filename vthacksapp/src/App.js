@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <head>
-      <title>Shurming</title>
+      <title>Shruming</title>
     </head>
     <Router>
       <NavbarBootstrap/>

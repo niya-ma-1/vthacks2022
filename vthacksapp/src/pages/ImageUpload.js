@@ -3,6 +3,7 @@ import './ImageUpload.css';
 import bgImage from '../assets/home.mp4'
 
 let img = ""
+let name = ""
 
 export const ImageUpload = () =>{
     const [file, setFile] = useState();
@@ -11,6 +12,13 @@ export const ImageUpload = () =>{
         console.log(e.target.files);
         setFile(URL.createObjectURL(e.target.files[0]));
         img = e.target.files[0].name;
+        for(let i = 0; i < img.length; i++){
+            let c = img.charAt(i);
+            if(c == '.'){
+                break;
+            }
+            name+=img.charAt(i);
+        }
         console.log(img);
     }
 
@@ -30,7 +38,7 @@ export const ImageUpload = () =>{
                 <input id="imgs" type="file" accept="image/png, image/jpeg,.txt,.doc" onChange={handleChange} />
                 <img style={{height: "400px",width:"400px"}} src={file} />
             </div>
-            <div>You have uploaded: {img} </div>
+            <div>You have uploaded: {name} </div>
         </div>
     );
 }

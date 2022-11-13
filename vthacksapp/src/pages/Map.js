@@ -29,6 +29,8 @@ export default function Map() {
     const [checked7, setChecked7] = useState(false);
     const [checked8, setChecked8] = useState(false);
     const [checked9, setChecked9] = useState(false);
+
+    
     const defaultProps = {
       center: {
         lat: 37.99835602,
@@ -56,6 +58,7 @@ function handleChange1(e) {
 }
 function handleChange2(e) {
   setChecked2(e.currentTarget.checked)
+  console.log("check2")
 }
 function handleChange3(e) {
   setChecked3(e.currentTarget.checked)

@@ -19,7 +19,7 @@ function NavbarBootstrap() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/Map">Map</Nav.Link>
             <NavDropdown title="Resources" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="/Sustainability">Sustainability</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>

@@ -1,0 +1,37 @@
+.Sustainability {
+    text-align: center;
+}
+
+.Sustainability .text-wrapper{
+    padding:10px;
+    margin-top: 80px;
+    display: inline-block;
+    border: 2px solid #eee;
+    border-radius: 5px;
+}
+
+.Sustainability .text-wrapper h3 {
+    color: white;
+    display: inline-block;
+    background-color: #a47148;
+    padding: 10px 20px;
+}
+
+.Sustainability .text-wrapper p {
+    color: #210f04;
+    width:400px;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    text-align: left;
+}
+.Sustainability video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100vh;
+    opacity: 0.5;
+}

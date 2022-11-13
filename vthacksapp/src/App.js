@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {ImageUpload} from './pages/ImageUpload';
 import Map from './pages/Map';
+import Sustainability from './pages/Sustainability';
 import NavbarBootstrap from './components/NavbarBS';
 
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element ={<ImageUpload/>}/>
         <Route path="/Map" element ={<Map/>}/>
+        <Route path="/Sustainability" element ={<Sustainability/>}/>
       </Routes>
 
     </Router>

@@ -14,6 +14,7 @@ import {Russula_icon} from '../mushrooms/Russula';
 import {Suillis_icon} from '../mushrooms/Suillis';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
+//import {HeatCircle} from '../components/HeatCircle';
 
 const google = window.google;
 

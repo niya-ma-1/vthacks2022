@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from 'react-bootstrap/Button';
 import GoogleMapReact from 'google-map-react';
+import { Link } from 'react-router-dom';
 import {defaultProps} from 'google-map-react';
 import {Agaricus_icon} from '../mushrooms/Agaricus';
 import {Amanita_icon} from '../mushrooms/Amanita';
@@ -177,14 +178,13 @@ return (
         Suillis 
         <img src={suillis_logo} style={{width:20, marginTop: -7}} />
     </ToggleButton>
-    
-    <div style={{textAlign:'right'}}>
-    <Popup
+
+    <Popup style={{textAlign:"right"}}
       trigger={
-      <Button variant="warning" className='mb-2'>
+      <Button variant="warning" className='mb-2' >
         Info</Button>}>
+        <a href={"https://www.epa.gov/ghgreporting/data-sets"}>This map visualizes carbon emission locations in the United States.</a>
     </Popup>
-    </div>
 
 
     <GoogleMapReact

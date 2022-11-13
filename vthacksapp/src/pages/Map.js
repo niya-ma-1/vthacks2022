@@ -20,7 +20,15 @@ const google = window.google;
 const conditional = true;
 
 export default function Map() {
-    const [checked, setChecked] = useState(false);
+    const [checked1, setChecked1] = useState(false);
+    const [checked2, setChecked2] = useState(false);
+    const [checked3, setChecked3] = useState(false);
+    const [checked4, setChecked4] = useState(false);
+    const [checked5, setChecked5] = useState(false);
+    const [checked6, setChecked6] = useState(false);
+    const [checked7, setChecked7] = useState(false);
+    const [checked8, setChecked8] = useState(false);
+    const [checked9, setChecked9] = useState(false);
     const defaultProps = {
       center: {
         lat: 37.99835602,
@@ -43,7 +51,33 @@ export default function Map() {
     </div>)
 }
 }*/
-
+function handleChange1(e) {
+  setChecked1(e.currentTarget.checked)
+}
+function handleChange2(e) {
+  setChecked2(e.currentTarget.checked)
+}
+function handleChange3(e) {
+  setChecked3(e.currentTarget.checked)
+}
+function handleChange4(e) {
+  setChecked4(e.currentTarget.checked)
+}
+function handleChange5(e) {
+  setChecked5(e.currentTarget.checked)
+}
+function handleChange6(e) {
+  setChecked6(e.currentTarget.checked)
+}
+function handleChange7(e) {
+  setChecked7(e.currentTarget.checked)
+}
+function handleChange8(e) {
+  setChecked8(e.currentTarget.checked)
+}
+function handleChange9(e) {
+  setChecked9(e.currentTarget.checked)
+}
 return (
   // Important! Always set the container height explicitly
   <div style={{ height: '100vh', width: '100%' }}>
@@ -52,9 +86,9 @@ return (
         id="toggle-check"
         type="checkbox"
         variant="outline-warning"
-        checked={checked}
+        checked={checked1}
         value="1"
-        onChange={(e) => setChecked(e.currentTarget.checked)}
+        onChange={handleChange1}
       >
         Agaricus
     </ToggleButton>
@@ -63,9 +97,9 @@ return (
         id="toggle-check"
         type="checkbox"
         variant="outline-danger"
-        checked={checked}
+        checked={checked2}
         value="1"
-        onChange={(e) => setChecked(e.currentTarget.checked)}
+        onChange={handleChange2}
       >
         Amanita
     </ToggleButton>
@@ -74,9 +108,9 @@ return (
         id="toggle-check"
         type="checkbox"
         variant="outline-warning"
-        checked={checked}
+        checked={checked3}
         value="1"
-        onChange={(e) => setChecked(e.currentTarget.checked)}
+        onChange={handleChange3}
       >
         Boletus
     </ToggleButton>
@@ -85,9 +119,9 @@ return (
         id="toggle-check"
         type="checkbox"
         variant="outline-danger"
-        checked={checked}
+        checked={checked4}
         value="1"
-        onChange={(e) => setChecked(e.currentTarget.checked)}
+        onChange={handleChange4}
       >
         Cortinarius
     </ToggleButton>
@@ -96,9 +130,9 @@ return (
         id="toggle-check"
         type="checkbox"
         variant="outline-primary"
-        checked={checked}
+        checked={checked5}
         value="1"
-        onChange={(e) => setChecked(e.currentTarget.checked)}
+        onChange={handleChange5}
       >
         Entoloma
     </ToggleButton>
@@ -107,9 +141,9 @@ return (
         id="toggle-check"
         type="checkbox"
         variant="outline-danger"
-        checked={checked}
+        checked={checked6}
         value="1"
-        onChange={(e) => setChecked(e.currentTarget.checked)}
+        onChange={handleChange6}
       >
         Hygrocybe
     </ToggleButton>
@@ -118,9 +152,9 @@ return (
         id="toggle-check"
         type="checkbox"
         variant="outline-warning"
-        checked={checked}
+        checked={checked7}
         value="1"
-        onChange={(e) => setChecked(e.currentTarget.checked)}
+        onChange={handleChange7}
       >
         Lactarius
     </ToggleButton>
@@ -129,9 +163,9 @@ return (
         id="toggle-check"
         type="checkbox"
         variant="outline-danger"
-        checked={checked}
+        checked={checked8}
         value="1"
-        onChange={(e) => setChecked(e.currentTarget.checked)}
+        onChange={handleChange8}
       >
         Russula
     </ToggleButton>
@@ -140,9 +174,9 @@ return (
         id="toggle-check"
         type="checkbox"
         variant="outline-warning"
-        checked={checked}
+        checked={checked9}
         value="1"
-        onChange={(e) => setChecked(e.currentTarget.checked)}
+        onChange={handleChange9}
       >
         Suillis
     </ToggleButton>

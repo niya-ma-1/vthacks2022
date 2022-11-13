@@ -2,20 +2,16 @@ import React, { useState } from "react";
 import './ImageUpload.css';
 import bgImage from '../assets/home.mp4'
 
+let img = ""
+
 export const ImageUpload = () =>{
-    const [data,setData]=useState();
-    console.log(data)
     const [file, setFile] = useState();
-    let test = "pppp"
 
     function handleChange(e) {
         console.log(e.target.files);
-        setData(e.target.files[0]);
         setFile(URL.createObjectURL(e.target.files[0]));
-    }
-    let img = ""
-    if(data !== undefined){
-        img = data[0].name;
+        img = e.target.files[0].name;
+        console.log(img);
     }
 
     const [cursor, setCursor] = useState('crosshair');

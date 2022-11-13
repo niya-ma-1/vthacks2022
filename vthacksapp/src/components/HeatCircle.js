@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import Circle from '../assets/circle.png'
 
-export const HeatCircle = () =>{
-    
+export function HeatCircle({intensity}){
+
     return(
-        <div className="circle" style={{background: "radial-gradient(#e66465, #9198e5);" }}>
-            sada
+        <div className="main">
+            <img src={Circle} 
+            style={{width:10, 
+                    marginTop: -7, 
+                    opacity: intensity,
+                    zIndex: -1}} />
         </div>
     );
 }

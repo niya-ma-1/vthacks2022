@@ -11,7 +11,7 @@ export default function Sustainability(){
             </video>
             <div className='text-wrapper'>
                 <h3>
-                    How is mushroom sustainable?
+                    How are Mushroom Sustainable?
                 </h3>
 
                 <p>

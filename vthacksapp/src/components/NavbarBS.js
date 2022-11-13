@@ -23,7 +23,7 @@ function NavbarBootstrap() {
               <NavDropdown.Item href="/Recipe">
                 Recipes
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="/Diy">DIY Mushroom Crafts</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/Plant">
                 Plant your own

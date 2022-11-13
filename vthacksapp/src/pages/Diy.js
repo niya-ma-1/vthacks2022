@@ -20,7 +20,6 @@ export default function Diy(){
                 <p>
                     Here are a few tutorials to get started:
                 </p>
-                    <br></br>
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=A51zw66oI80" target="_blank">
                         Mycelium Cardboard Growth

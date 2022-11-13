@@ -14,7 +14,9 @@ import {Russula_icon} from '../mushrooms/Russula';
 import {Suillis_icon} from '../mushrooms/Suillis';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
-//import {HeatCircle} from '../components/HeatCircle';
+import { HeatCircle} from '../components/HeatCircle';
+import carbonEmission from '../assets/carbonEmission';
+
 
 const google = window.google;
 const conditional = true;
@@ -416,6 +418,22 @@ return (
         lng={-81}
         text="North Carolina"
       />
+
+      <HeatCircle
+        lat={42}
+        lng={-76}
+        intensity={1}
+      />
+
+     {carbonEmission.map((item)=>{
+        return <HeatCircle 
+                lat={item["Latitude"]} 
+                lng={item["Longitude"]} 
+                intensity={item["Total reported direct emissions"]/10000}
+        />
+     })}
+
+
     </GoogleMapReact>
   </div>
 );

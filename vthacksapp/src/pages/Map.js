@@ -21,16 +21,19 @@ import carbonEmission from '../assets/carbonEmission';
 const google = window.google;
 const conditional = true;
 
+
 export default function Map() {
-    const [checked1, setChecked1] = useState(false);
-    const [checked2, setChecked2] = useState(false);
-    const [checked3, setChecked3] = useState(false);
-    const [checked4, setChecked4] = useState(false);
-    const [checked5, setChecked5] = useState(false);
-    const [checked6, setChecked6] = useState(false);
-    const [checked7, setChecked7] = useState(false);
-    const [checked8, setChecked8] = useState(false);
-    const [checked9, setChecked9] = useState(false);
+
+    const [check1, setCheck1] = useState(false);
+    const [check2, setCheck2] = useState(false);
+    const [check3, setCheck3] = useState(false);
+    const [check4, setCheck4] = useState(false);
+    const [check5, setCheck5] = useState(false);
+    const [check6, setCheck6] = useState(false);
+    const [check7, setCheck7] = useState(false);
+    const [check8, setCheck8] = useState(false);
+    const [check9, setCheck9] = useState(false);
+
     const defaultProps = {
       center: {
         lat: 37.99835602,
@@ -42,146 +45,120 @@ export default function Map() {
     const handleApiLoaded = (map, maps) => {
       // use map and maps objects
     };
-  
-/*function test(param){
-  if(param){
-    return (<div><Hygrocybe_icon
-    lat={62}
-    lng={105}
-    text="Random"
-    />
-    </div>)
-}
-}*/
-function handleChange1(e) {
-  setChecked1(e.currentTarget.checked)
-}
-function handleChange2(e) {
-  setChecked2(e.currentTarget.checked)
-}
-function handleChange3(e) {
-  setChecked3(e.currentTarget.checked)
-}
-function handleChange4(e) {
-  setChecked4(e.currentTarget.checked)
-}
-function handleChange5(e) {
-  setChecked5(e.currentTarget.checked)
-}
-function handleChange6(e) {
-  setChecked6(e.currentTarget.checked)
-}
-function handleChange7(e) {
-  setChecked7(e.currentTarget.checked)
-}
-function handleChange8(e) {
-  setChecked8(e.currentTarget.checked)
-}
-function handleChange9(e) {
-  setChecked9(e.currentTarget.checked)
-}
+
+    function toOpacity(check){
+        if(check){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
 return (
   // Important! Always set the container height explicitly
   <div style={{ height: '100vh', width: '100%' }}>
+
     <ToggleButton
         className="mb-2"
         id="toggle-check"
         type="checkbox"
         variant="outline-warning"
-        checked={checked1}
         value="1"
-        onChange={handleChange1}
-      >
-        Agaricus
-    </ToggleButton>
-    <ToggleButton
-        className="mb-2"
-        id="toggle-check"
-        type="checkbox"
-        variant="outline-danger"
-        checked={checked2}
-        value="1"
-        onChange={handleChange2}
-      >
-        Amanita
-    </ToggleButton>
+        checked={check1}
+        onClick={() => setCheck1(!check1)}
+        >
+        Agaricus {check1.toString()}
+        </ToggleButton>
     <ToggleButton
         className="mb-2"
         id="toggle-check"
         type="checkbox"
         variant="outline-warning"
-        checked={checked3}
-        value="1"
-        onChange={handleChange3}
-      >
-        Boletus
-    </ToggleButton>
-    <ToggleButton
-        className="mb-2"
-        id="toggle-check"
-        type="checkbox"
-        variant="outline-danger"
-        checked={checked4}
-        value="1"
-        onChange={handleChange4}
-      >
-        Cortinarius
-    </ToggleButton>
-    <ToggleButton
-        className="mb-2"
-        id="toggle-check"
-        type="checkbox"
-        variant="outline-primary"
-        checked={checked5}
-        value="1"
-        onChange={handleChange5}
-      >
-        Entoloma
-    </ToggleButton>
-    <ToggleButton
-        className="mb-2"
-        id="toggle-check"
-        type="checkbox"
-        variant="outline-danger"
-        checked={checked6}
-        value="1"
-        onChange={handleChange6}
-      >
-        Hygrocybe
+        value="2"
+        checked={check2}
+        onClick={() => setCheck2(!check2)}
+        >
+        Amanita {check2.toString()}
     </ToggleButton>
     <ToggleButton
         className="mb-2"
         id="toggle-check"
         type="checkbox"
         variant="outline-warning"
-        checked={checked7}
-        value="1"
-        onChange={handleChange7}
-      >
-        Lactarius
-    </ToggleButton>
-    <ToggleButton
-        className="mb-2"
-        id="toggle-check"
-        type="checkbox"
-        variant="outline-danger"
-        checked={checked8}
-        value="1"
-        onChange={handleChange8}
-      >
-        Russula
+        value="3"
+        checked={check3}
+        onClick={() => setCheck3(!check3)}
+        >
+        Boletus {check3.toString()}
     </ToggleButton>
     <ToggleButton
         className="mb-2"
         id="toggle-check"
         type="checkbox"
         variant="outline-warning"
-        checked={checked9}
-        value="1"
-        onChange={handleChange9}
-      >
-        Suillis
+        value="4"
+        checked={check4}
+        onClick={() => setCheck4(!check4)}
+        >
+        Cortinarius {check4.toString()}
     </ToggleButton>
+    <ToggleButton
+        className="mb-2"
+        id="toggle-check"
+        type="checkbox"
+        variant="outline-warning"
+        value="5"
+        checked={check5}
+        onClick={() => setCheck5(!check5)}
+        >
+        Entoloma {check5.toString()}
+    </ToggleButton>
+    <ToggleButton
+        className="mb-2"
+        id="toggle-check"
+        type="checkbox"
+        variant="outline-warning"
+        value="6"
+        checked={check6}
+        onClick={() => setCheck6(!check6)}
+        >
+        Hygrocybe {check6.toString()}
+    </ToggleButton>
+    <ToggleButton
+        className="mb-2"
+        id="toggle-check"
+        type="checkbox"
+        variant="outline-warning"
+        value="7"
+        checked={check7}
+        onClick={() => setCheck7(!check7)}
+        >
+        Lactarius {check7.toString()}
+    </ToggleButton>
+    <ToggleButton
+        className="mb-2"
+        id="toggle-check"
+        type="checkbox"
+        variant="outline-warning"
+        value="8"
+        checked={check8}
+        onClick={() => setCheck8(!check8)}
+        >
+        Russula {check8.toString()}
+    </ToggleButton>
+    <ToggleButton
+        className="mb-2"
+        id="toggle-check"
+        type="checkbox"
+        variant="outline-warning"
+        value="9"
+        checked={check9}
+        onClick={() => setCheck9(!check9)}
+        >
+        Suillis {check9.toString()}
+    </ToggleButton>
+
+
     <GoogleMapReact
       bootstrapURLKeys={{ key: "AIzaSyCHhSC-JoW54M-PKDBVHe4wWYzdmduMLt4"
       }}
@@ -194,6 +171,7 @@ return (
         lat={39.77}
         lng={-121}
         text="California"
+        
       />
       <Agaricus_icon
         lat={44.5}
@@ -328,12 +306,14 @@ return (
       <Hygrocybe_icon
         lat={22.29}
         lng={-155.58}
+        // appear={toOpacity(check1)}
         text="Hawaii"
       />
       <Hygrocybe_icon
         lat={37.1}
         lng={-119.2}
         text="California"
+        appear={false}
       />
       <Lactarius_icon
         lat={36.8}
@@ -414,12 +394,6 @@ return (
         lat={36}
         lng={-81}
         text="North Carolina"
-      />
-
-      <HeatCircle
-        lat={42}
-        lng={-76}
-        intensity={1}
       />
 
      {carbonEmission.map((item)=>{

@@ -20,13 +20,13 @@ function NavbarBootstrap() {
             <Nav.Link href="/Map">Map</Nav.Link>
             <NavDropdown title="Resources" id="basic-nav-dropdown">
               <NavDropdown.Item href="/Sustainability">Sustainability</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+              <NavDropdown.Item href="/Recipe">
+                Recipe
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="/Plant">
+                Plant your own
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

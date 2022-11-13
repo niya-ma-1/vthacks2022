@@ -6,6 +6,7 @@ import Sustainability from './pages/Sustainability';
 import Recipe from './pages/Recipe';
 import Plant from './pages/Plant';
 import NavbarBootstrap from './components/NavbarBS';
+import "./App.css";
 
 
 function App() {

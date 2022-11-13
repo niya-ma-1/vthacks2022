@@ -21,7 +21,7 @@ function NavbarBootstrap() {
             <NavDropdown title="Resources" id="basic-nav-dropdown">
               <NavDropdown.Item href="/Sustainability">Sustainability</NavDropdown.Item>
               <NavDropdown.Item href="/Recipe">
-                Recipe
+                Recipes
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />

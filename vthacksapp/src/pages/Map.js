@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Button from 'react-bootstrap/Button';
 import GoogleMapReact from 'google-map-react';
 import {defaultProps} from 'google-map-react';
 import {Agaricus_icon} from '../mushrooms/Agaricus';
@@ -11,6 +12,7 @@ import {Entoloma_icon} from '../mushrooms/Entoloma';
 import {Hygrocybe_icon} from '../mushrooms/Hygrocybe';
 import {Lactarius_icon} from '../mushrooms/Lactarius';
 import {Russula_icon} from '../mushrooms/Russula';
+import Popup from 'reactjs-popup';
 import {Suillis_icon} from '../mushrooms/Suillis';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
@@ -175,10 +177,18 @@ return (
         Suillis 
         <img src={suillis_logo} style={{width:20, marginTop: -7}} />
     </ToggleButton>
+    
+    <div style={{textAlign:'right'}}>
+    <Popup
+      trigger={
+      <Button variant="warning" className='mb-2'>
+        Info</Button>}>
+    </Popup>
+    </div>
 
 
     <GoogleMapReact
-      bootstrapURLKeys={{ key: ""
+      bootstrapURLKeys={{ key: "AIzaSyCHhSC-JoW54M-PKDBVHe4wWYzdmduMLt4"
       }}
       center={defaultProps.center}
       zoom={defaultProps.zoom}

@@ -2,6 +2,7 @@ import React from "react";
 import './Sustainability.css';
 import bgImage from '../assets/planting.mp4'
 import AnimCursor from '../components/AnimatedCursor'
+import './Diy.css';
 
 
 export default function Plant(){
@@ -12,24 +13,18 @@ export default function Plant(){
             </video>
             <div className='text-wrapper'>
                 <h3>
-                    How to grow your own mushrooms?
+                    How to Grow Your Own Mushrooms
                 </h3>
 
                 <p>
-                    Mushrooms are one of the most sustainable and healthy vegtables. Compare 
-                    to other vegetables, harvesting a pound of mushrooms only requires 1.8 
-                    gallons of water, which is significantly smaller than other vegetables like 
-                    potatoes, which requires 34 gallons of water. Mushrooms farming also emits 
-                    less carbon dioxide and requires less land than other farming techniques.
-                    <br></br>
-
-                    Additionally, mushrooms are a great alternative to meat. Animal agriculture 
-                    is the second-largest contributor to human-made greenhouse gas emission.
-                    Beside eating, mushrooms can also be used as biodegradable package containers, 
-                    a substitude to the polystyrene foam. 
-
-
+                    Here are some guides on how to start growing your own mushrooms for any experience level:
                 </p>
+                <ul>
+                    <li><a href="https://www.wikihow.com/Grow-Mushrooms-Indoors">How to Grow Mushrooms Indoors</a></li>
+                    <li><a href="https://www.wikihow.com/Grow-Edible-Mushrooms">How to Grow Edible Mushrooms</a></li>
+                    <li><a href="https://www.wikihow.com/Grow-Organic-Mushrooms">How to Grow Organic Mushrooms</a></li>
+                    <li><a href="https://www.wikihow.com/Grow-Hydroponic-Mushrooms">How to Grow Hydroponic Mushrooms</a></li>
+                </ul>
             </div>
             <AnimCursor>
             </AnimCursor>       

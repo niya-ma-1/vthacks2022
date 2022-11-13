@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Hygrocybe from '../assets/mushroom_icons/hygrocybe_pic.png'
 
-export const Hygrocybe = () =>{
+export const Hygrocybe_icon = () =>{
     
     return(
         <div className="main">

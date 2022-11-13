@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Amanita from '../assets/mushroom_icons/amanita_pic.png'
 
-export const Amanita = () =>{
+export const Amanita_icon = () =>{
     
     return(
         <div className="main">

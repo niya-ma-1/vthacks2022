@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Lactarius from '../assets/mushroom_icons/lactarius_pic.png'
 
-export const Lactarius = () =>{
+export const Lactarius_icon = () =>{
     
     return(
         <div className="main">

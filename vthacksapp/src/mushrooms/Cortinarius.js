@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Cortinarius from '../assets/mushroom_icons/cortinarius_pic.png'
 
-export const Cortinarius = () =>{
+export const Cortinarius_icon = () =>{
     
     return(
         <div className="main">

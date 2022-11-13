@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Russula from '../assets/mushroom_icons/russula_pic.png'
 
-export const Russula = () =>{
+export const Russula_icon = () =>{
     
     return(
         <div className="main">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Suillis from '../assets/mushroom_icons/suillis_pic.png'
 
-export const Suillis = () =>{
+export const Suillis_icon = () =>{
     
     return(
         <div className="main">

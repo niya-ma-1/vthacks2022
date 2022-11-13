@@ -11,7 +11,7 @@ function NavbarBootstrap() {
       <Container>
         <Navbar.Brand href="/">
             <img src={logo} style={{width:50, marginTop: -7}} />
-            Shurming
+            Shrüming
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
